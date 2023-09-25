@@ -1,19 +1,11 @@
-function fibo(num){
-    let A = []
-    let n = num
+//Fibonacci con recursividad, tarea corregida
 
-    let a = 1
-    let b = 1
-    let c = 0
-
-    for(let i = 0; i<n; i++){
-        A.push(a)
-        c = a + b
-        a = b
-        b = c
+function fib(n){
+    if(n<3){
+        return 1
     }
 
-    return A
+    return fib(n-2)+fib(n-1) //recursividad
 }
 
-console.log(fibo(8))
+console.log(fib(8))

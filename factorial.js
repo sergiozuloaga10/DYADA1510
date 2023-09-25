@@ -1,14 +1,11 @@
-function factori(n){
-    let num = n
-    let fact
+//Factorial con recursividad, tarea corregida
 
-    if (n==0) {
-        fact = 1
-    } else{
-        fact = num*factorial(num-1)
+function factorial(n){
+    if(n<2){
+        return 1
     }
 
-    return fact
+    return n*factorial(n-1) //recursividad
 }
 
-console.log(factori(7))
+console.log(factorial(2))
