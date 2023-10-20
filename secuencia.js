@@ -1,8 +1,7 @@
 function secuencia(n){
     //Caso base: si n es 0 entonces el algoritmo por recursividad ha terminado
     if(n === 0){
-        console.log(n)
-        return
+        return n
     }
 
     //Divide y venceras: Dividimos el problema en 2
@@ -11,8 +10,9 @@ function secuencia(n){
     console.log(n)
 
     //Parte 2: Llamamos a la funcion a sí misma con el numero anterior n-1
-    secuencia(n-1)
+    return secuencia(n-1)
 
 }
 
-secuencia(15)
+console.log(secuencia(15))
+
