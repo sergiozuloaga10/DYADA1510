@@ -26,6 +26,6 @@ let root = new Node(10);
 root = bt_insert(root, 5);
 root = bt_insert(root, 15);
 root = bt_insert(root, 3);
-root = bt_insert(root, 6);
+root = bt_insert(root, 7);
 
 console.log(root);
