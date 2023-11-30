@@ -24,7 +24,7 @@ function bt_insert(root, value) {
 // Lo vimos en clase: busqueda
 function search(root, t) {
     if (root === null || root.value === t) {
-        return root;
+        return root.value;
     }
 
     if (root.value > t) {
